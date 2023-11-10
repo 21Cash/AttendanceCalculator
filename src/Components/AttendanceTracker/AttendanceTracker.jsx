@@ -144,7 +144,7 @@ const AttendanceTracker = () => {
           {" "}
           View
           <a
-            href="https://github.com/21ThousandProof/AttendanceCalculator/tree/deployment"
+            href="https://github.com/21ThousandProof/AttendanceCalculator"
             target="_blank"
             rel="noopener noreferrer"
           >
