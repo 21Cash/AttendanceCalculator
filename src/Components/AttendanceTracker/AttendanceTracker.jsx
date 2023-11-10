@@ -34,12 +34,12 @@ const AttendanceTracker = () => {
   const handlePresentClick = () => {
     setClassesAttended(classesAttended + 1);
     setTotalClasses(totalClasses + 1);
-    // updateBunkingInfo();
   };
 
   const handleAbsentClick = () => {
     setTotalClasses(totalClasses + 1);
   };
+
   const updateBunkingInfo = () => {
     const bunkCount = classesToBunk(classesAttended, totalClasses);
 
@@ -88,6 +88,10 @@ const AttendanceTracker = () => {
 
   return (
     <div className="attendance-tracker-container">
+      <div className="header-container">
+        <h1 className="attendance-heading">Attendance Calculator</h1>
+      </div>
+
       <div className="input-container">
         <label htmlFor="targetAttendance">Target Attendance:</label>
         <input
@@ -133,8 +137,22 @@ const AttendanceTracker = () => {
         <button onClick={handleAbsentClick}>Absent</button>
       </div>
 
-      {/* Display bunkingInfo */}
       <BunkInfo />
+
+      <div className="footer-container">
+        <p>
+          {" "}
+          View
+          <a
+            href="https://github.com/21ThousandProof/AttendanceCalculator/tree/deployment"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            &nbsp;Source Code&nbsp;
+          </a>
+          On Github
+        </p>
+      </div>
     </div>
   );
 };
