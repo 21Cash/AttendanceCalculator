@@ -5,10 +5,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route
-          path="/AttendanceCalculator/"
-          element={<AttendanceTracker />}
-        ></Route>
+        <Route path="/" element={<AttendanceTracker />}></Route>
       </Routes>
     </BrowserRouter>
   );
