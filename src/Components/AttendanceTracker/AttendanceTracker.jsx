@@ -67,21 +67,21 @@ const AttendanceTracker = () => {
       return (
         <>
           <br></br>
-          To Gain {targetAttendance}
+          To Attain {targetAttendance}% Attendance
           <br></br>
           You Can Bunk {classCount} Classes, {days} days
           <br></br>
-          {oldAttendance.toFixed(2)} &#8594; {newAttendance.toFixed(2)}
+          {oldAttendance.toFixed(2)}% &#8594; {newAttendance.toFixed(2)}%
         </>
       );
     }
     return (
       <>
         <br></br>
-        To Gain {targetAttendance}
+        To Attain {targetAttendance}% Attendance
         <br></br>
         You Must Attend {classCount} Classes, {days} Days<br></br>
-        {oldAttendance.toFixed(2)} &#8594; {newAttendance.toFixed(2)}
+        {oldAttendance.toFixed(2)}% &#8594; {newAttendance.toFixed(2)}%
       </>
     );
   };
